@@ -1,0 +1,12 @@
+---
+
+default: --profile pretty -p homolog -p html
+#estou passando para a constante AMBIENTE que deverá ser executado o ambiente de homol
+
+pretty: --format pretty
+progress: --format progress
+homolog: AMBIENTE=homolog
+producao: AMBIENTE=producao
+
+#gerando relatorio de testes
+html: --format html --out=reports/relatorio.html
